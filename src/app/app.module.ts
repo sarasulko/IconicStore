@@ -10,6 +10,14 @@ import { AboutComponent } from './component/about/about.component';
 import { CartComponent } from './component/cart/cart.component';
 import { HeaderModule } from './component/header/header.module';
 import { FooterModule } from './component/footer/footer.module';
+import { SingleProductComponent } from './component/single-product/single-product.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { PaymentComponent } from './payment/payment.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +26,18 @@ import { FooterModule } from './component/footer/footer.module';
     ShopComponent,
     BlogComponent,
     AboutComponent,
-    CartComponent
+    CartComponent,
+    SingleProductComponent,
+    RegisterUserComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

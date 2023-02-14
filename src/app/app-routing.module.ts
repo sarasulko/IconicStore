@@ -5,6 +5,8 @@ import { BlogComponent } from './component/blog/blog.component';
 import { CartComponent } from './component/cart/cart.component';
 import { HomeComponent } from './component/home/home.component';
 import { ShopComponent } from './component/shop/shop.component';
+import { SingleProductComponent } from './component/single-product/single-product.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
 
@@ -31,7 +33,18 @@ const routes: Routes = [
   {
     path: 'cart',
     component: CartComponent
+  },
+
+  {
+    path: 'singleProduct',
+    component: SingleProductComponent
+  },
+
+{
+    path: 'payment',
+    component: PaymentComponent
   }
+
 
 ];
 

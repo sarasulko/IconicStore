@@ -1,0 +1,74 @@
+<app-header></app-header>
+
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+
+        <img src="/assets/img/img_7.png" width="100%" id="MainImg" alt="">
+
+        <div class="small-img-group">
+
+            <div class="small-img-col">
+                <img src="/assets/img/img_7.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="/assets/img/img_19.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="/assets/img/img_26.png" width="100%" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="/assets/img/img_18.png" width="100%" class="small-img" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="single-pro-details">
+        <h6> Home / LV Bag</h6>
+        <h4>Women's Fashion Bag</h4>
+        <h2>$700.00</h2>
+            <option>Select Size</option>
+            <option>Cabin</option>
+            <option>Compact</option>
+            <option>Medium</option>
+            <option>Large</option>
+
+        <!-- <input type="number" value="1"> -->
+        <button class="normal" (click)="goToCart()">Add to cart</button>
+        <h4>Product Details</h4>
+        <span>The “Infinity Dots” theme of the Louis Vuitton x
+            Yayoi Kusama collection gives the LVxYK NeoNoé MM an
+            infusion of creative energy. Dozens of white dots,
+            modeled after the revered Japanese artist’s hallmark motif,
+            are printed on fine black cowhide embossed with the House’s
+            historic Monogram pattern. And the removable charm is
+            shaped like a pumpkin, another of Kusama’s visual signatures.
+        </span>
+    </div>
+</section>
+
+
+<script>
+
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function () {
+        MainImg.src = smallimg[0].src;
+    }
+
+    smallimg[1].onclick = function () {
+        MainImg.src = smallimg[1].src;
+    }
+
+    smallimg[2].onclick = function () {
+        MainImg.src = smallimg[2].src;
+    }
+
+    smallimg[3].onclick = function () {
+        MainImg.src = smallimg[3].src;
+    }
+
+</script>
+
+<app-footer></app-footer>
