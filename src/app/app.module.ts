@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
@@ -10,6 +9,12 @@ import { AboutComponent } from './component/about/about.component';
 import { CartComponent } from './component/cart/cart.component';
 import { HeaderModule } from './component/header/header.module';
 import { FooterModule } from './component/footer/footer.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RatingModule, RatingConfig } from 'ngx-bootstrap/rating';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http'
+
+
 
 @NgModule({
   declarations: [
@@ -18,15 +23,23 @@ import { FooterModule } from './component/footer/footer.module';
     ShopComponent,
     BlogComponent,
     AboutComponent,
-    CartComponent
+    CartComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    NgbModule,
+    RatingModule,
+    FormsModule,
+    HttpClientModule
+
+  
   ],
-  providers: [],
+  providers: [ RatingConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

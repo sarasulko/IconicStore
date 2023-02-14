@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ShopRoutingModule } from './shop-routing.module';
 import { FooterModule } from '../footer/footer.module';
 import { HeaderModule } from '../header/header.module';
+import { NgbRating } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { HeaderModule } from '../header/header.module';
     CommonModule,
     ShopRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    NgbRating,
+
   ]
 })
 export class ShopModule { }
